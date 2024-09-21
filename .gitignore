@@ -81,12 +81,12 @@ crashlytics-build.properties
 *.sln
 
 # Unity folders to ignore
-/Library/
-/Temp/
-/Logs/
-/MemoryCaptures/
-/obj/
-/UserSettings/
+lich-run/Library/
+lich-run/Temp/
+lich-run/Logs/
+lich-run/MemoryCaptures/
+lich-run/obj/
+lich-run/UserSettings/
 
 # Other generated files
 *.pidb
