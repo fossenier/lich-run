@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     Animator attackAnimator;
     public Rigidbody2D rigidBody;
     private SpriteRenderer spriteRenderer;
+    public Sprite normalSprite;
+    public Sprite attackSprite;
 
     public float speed = 500f;
     public float jumpHeight = 5f;
@@ -41,6 +43,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown("s"))
         {
             attackAnimator.SetBool("Attack", true);
+            spriteRenderer.sprite = attackSprite;
         }
         if (Input.GetKeyUp("s"))
         {
@@ -49,8 +52,14 @@ public class Player : MonoBehaviour
 
     }
 
+    public void OnAnimationEventTriggered()
+    {
+        Debug.Log("Animation event triggered!");
+    }
+
     void onAttack()
     {
 
     }
+
 }

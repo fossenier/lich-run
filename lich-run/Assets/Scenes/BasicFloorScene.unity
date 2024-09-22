@@ -155,6 +155,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 509387291}
+  normalSprite: {fileID: 21300000, guid: 4154866101e2caa4aa4e72031b989e49, type: 3}
+  attackSprite: {fileID: 21300000, guid: 7f952843e20639040aad8adf921ce0e3, type: 3}
   speed: 500
   jumpHeight: 5
 --- !u!61 &509387290
