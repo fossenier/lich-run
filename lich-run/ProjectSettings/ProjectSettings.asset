@@ -651,7 +651,13 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -671,11 +677,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: a91c97a4-766a-48a8-93ff-6f8a1dc5f9a8
+  cloudProjectId: 9f058bb1-3a3d-4915-904e-713cfbfb55af
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: lich-run 2024-09-21_09-48-49
-  organizationId: hzv143
+  projectName: lich-run
+  organizationId: zaid-3013592
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
