@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -56,6 +55,12 @@ public class Player : MonoBehaviour
         if (Input.GetKeyUp("s"))
         {
             attackAnimator.SetBool("Attack", false);
+        }
+
+        // Change Scenes
+        if (Input.GetKeyDown("c"))
+        {
+            SceneManager.LoadScene("Lastest");
         }
 
     }
