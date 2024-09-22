@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - LichLayer
   - Water
   - UI
+  - MonsterLayer
   - Background Bricks
-  - 
   - 
   - 
   - 
