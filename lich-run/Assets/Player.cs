@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Transform sword;
+    Animator attackAnimator;
     public Rigidbody2D rigidBody;
 
-    private bool isSwordExtended = false;
-    // Start is called before the first frame update
+    public float speed = 500f;
+    public float jumpHeight = 5f;
+
     void Start()
     {
-
+        attackAnimator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+    // FixedUpdate is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(transform.position.y);
         if (Input.GetKey("right"))
         {
             rigidBody.AddForce(transform.right * 500f * Time.deltaTime);
@@ -28,23 +28,25 @@ public class Player : MonoBehaviour
             rigidBody.AddForce(transform.right * -500f * Time.deltaTime);
         }
 
-        if (Input.GetKey("up") && transform.position.y <= -3.4)
+        if (Input.GetKey("up") && transform.position.y <= -3.25)
         {
-            rigidBody.AddForce(transform.up * 5000f * Time.deltaTime);
+            rigidBody.AddForce(transform.up * 1000f * jumpHeight * Time.deltaTime);
         }
 
-        if (Input.GetKey("s"))
+        //Attack Animation
+        if (Input.GetKeyDown("s"))
         {
-            // rigidBody.AddForce(transform.up * 5000f * Time.deltaTime);
-            if (!isSwordExtended && sword.rotation.z == 0)
-            {
-                sword.Rotate(0, 0, -90);
-                isSwordExtended = true;
-                // yield return new WaitForSeconds(1);
-                sword.Rotate(0, 0, 90);
-
-            }
+            attackAnimator.SetBool("Attack", true);
         }
+        if (Input.GetKeyUp("s"))
+        {
+            attackAnimator.SetBool("Attack", false);
+        }
+
+    }
+
+    void onAttack()
+    {
 
     }
 }
