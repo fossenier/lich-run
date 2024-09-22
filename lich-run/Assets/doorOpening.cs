@@ -21,3 +21,5 @@ public class doorOpening : MonoBehaviour
         }
     }
 }
+
+(paramet
