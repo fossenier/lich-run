@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 509387290}
   - component: {fileID: 509387289}
   - component: {fileID: 509387293}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -386,7 +386,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -449,12 +449,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1509387953}
     - target: {fileID: 2744035544830187800, guid: d3191cf417f7e2e49959ddd694280e38, type: 3}
+      propertyPath: fireballLayer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2744035544830187800, guid: d3191cf417f7e2e49959ddd694280e38, type: 3}
       propertyPath: fireballSpeed
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4701954328505903602, guid: d3191cf417f7e2e49959ddd694280e38, type: 3}
       propertyPath: m_Name
       value: Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701954328505903602, guid: d3191cf417f7e2e49959ddd694280e38, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8248848590945208018, guid: d3191cf417f7e2e49959ddd694280e38, type: 3}
       propertyPath: m_LocalPosition.x
@@ -513,7 +521,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1509387953}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FireballSpawnpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
