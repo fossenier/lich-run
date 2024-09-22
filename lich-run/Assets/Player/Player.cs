@@ -6,13 +6,15 @@ public class Player : MonoBehaviour
 {
     Animator attackAnimator;
     public Rigidbody2D rigidBody;
+    private SpriteRenderer spriteRenderer;
 
     public float speed = 500f;
     public float jumpHeight = 5f;
 
     void Start()
     {
-        attackAnimator = GetComponent<Animator>();
+        attackAnimator = GetComponent<Animator>(); // Get the Animator component
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component
     }
 
     // FixedUpdate is called once per frame
@@ -21,11 +23,13 @@ public class Player : MonoBehaviour
         if (Input.GetKey("right"))
         {
             rigidBody.AddForce(transform.right * 500f * Time.deltaTime);
+            spriteRenderer.flipX = false; // Face right
         }
 
         if (Input.GetKey("left"))
         {
             rigidBody.AddForce(transform.right * -500f * Time.deltaTime);
+            spriteRenderer.flipX = true; // Face left
         }
 
         if (Input.GetKey("up") && transform.position.y <= -3.25)
