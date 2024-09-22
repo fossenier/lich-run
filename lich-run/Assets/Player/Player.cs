@@ -60,7 +60,7 @@ public class Player : MonoBehaviour
         // Change Scenes
         if (Input.GetKeyDown("c"))
         {
-            SceneManager.LoadScene("Lastest");
+            SceneManager.LoadScene("Level2");
         }
 
     }

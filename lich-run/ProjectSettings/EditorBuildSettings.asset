@@ -8,10 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleSceneFireball.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Bounding Boxes.unity
     guid: ceaea7a738e614f4faebabea1d3b6922
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Lastest.unity
     guid: b3fa46b21334245eb8e19c8518f012a6
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 07282eefea1cf654e8e2de8ec0fbdcdf
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: ebf4d64826a319343af834785e9dd6d4
   m_configObjects: {}
