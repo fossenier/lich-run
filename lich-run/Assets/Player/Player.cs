@@ -13,8 +13,12 @@ public class Player : MonoBehaviour
     public float speed = 500f;
     public float jumpHeight = 5f;
 
+    // Screen Bounds
+    private Vector2 screenBounds;
+
     void Start()
     {
+        // screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         attackAnimator = GetComponent<Animator>(); // Get the Animator component
         spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer component
     }
@@ -33,6 +37,10 @@ public class Player : MonoBehaviour
             rigidBody.AddForce(transform.right * -500f * Time.deltaTime);
             spriteRenderer.flipX = true; // Face left
         }
+
+        // Vector3 playerPos = transform.position;
+        // playerPos.x = Mathf.Clamp(playerPos.x, screenBounds.x, screenBounds.x * -1);
+        // transform.position = playerPos;
 
         if (Input.GetKey("up") && transform.position.y <= -3.25)
         {
