@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1407759823580719139}
   - component: {fileID: 7151546114676131310}
   - component: {fileID: 7083431489126144236}
+  - component: {fileID: 2412090786921996873}
   m_Layer: 0
   m_Name: Swordsman
   m_TagString: Untagged
@@ -158,3 +159,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2412090786921996873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025658297671132072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f700fbc405f04996b5e875352a5a75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  strikeRange: 2
+  wanderRadius: 5
+  moveSpeed: 2
